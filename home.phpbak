@@ -1,0 +1,29 @@
+<?php
+/*
+Template Name: Home
+*/
+?>
+
+<div class="row">
+    <div class="col-12-xs">
+<div class="cta">
+    <h3>Give your event:</h3>
+    <ul>
+        <li>Better Badges</li>
+        <li>Better Attendee Management</li>
+        <li>Better Lead Retrieval</li>
+    </ul>
+    <?php gravity_form(1, false, false, false, '', false); ?>
+</div>
+    </div>
+</div>
+<br /><br />
+<div class="row">
+    <div class="col-12-xs">
+<div class="quick_buttons">
+    <a class="btn btn-md btn-primary" href="#" title="Sign in for Qrious Lead Retrieval">Sign in for Qrious Lead Retrieval</a><br /><br />
+    <a class="btn btn-md btn-primary" href="#" title="Sign in for Qrious Lead Retrieval">Get the Qrious Lead Retrieval App</a>
+
+</div>
+    </div>
+</div>

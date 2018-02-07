@@ -1,0 +1,33 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+     <?php
+        if (has_nav_menu('footer_main')) :
+          wp_nav_menu(array('theme_location' => 'footer_main', 'menu_class' => 'footer_main'));
+        endif;
+      ?>
+      </div>
+      <div class="col-lg-4 col-lg-offset-4">
+      <?php
+        if (has_nav_menu('footer_sub')) :
+          wp_nav_menu(array('theme_location' => 'footer_sub', 'menu_class' => 'footer_sub'));
+        endif;
+      ?>
+      </div>
+    </div>
+  
+<hr />
+<div id="footer" role="contentinfo">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p>
+		<?php printf(__('%1$s is proudly powered by %2$s'), get_bloginfo('name'),
+		'<a href="https://wordpress.org/">WordPress</a>'); ?>
+		<br /><?php printf(__('%1$s and %2$s.'), '<a href="' . get_bloginfo('rss2_url') . '">' . __('Entries (RSS)') . '</a>', '<a href="' . get_bloginfo('comments_rss2_url') . '">' . __('Comments (RSS)') . '</a>'); ?>
+		<!-- <?php printf(__('%d queries. %s seconds.'), get_num_queries(), timer_stop(0, 3)); ?> -->
+	</p>
+</div>
+  </footer>
+</div>
+</div>
+<?php wp_footer(); ?>
